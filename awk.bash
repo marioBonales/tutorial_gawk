@@ -55,7 +55,7 @@ $0 ~ /hola/ { print $0 }
 #   Suma de dos números.
 ##
 
-int($1) > 0 && int($3) > 0 { $5 = $1 + $3; print }
+($1+0) > 0 && ($3+0) > 0 { $5 = $1 + $3; print }
 
 
 #<< Entrada
